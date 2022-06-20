@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_pet_shop/presenters/agendamento.dart';
 
 class CadastroAnimal extends StatelessWidget
 {
@@ -94,7 +95,7 @@ class CadastroAnimal extends StatelessWidget
                       Align(
                         alignment: Alignment.bottomRight,
                         child: ElevatedButton(
-                            onPressed: (){},
+                            onPressed: (){  Navigator.push(context, MaterialPageRoute(builder: (context) => Agendamento(),)); },
                             style: ButtonStyle(
                               backgroundColor:MaterialStateProperty.all<Color>(Colors.pink),
                             ),
